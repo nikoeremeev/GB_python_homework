@@ -9,7 +9,11 @@ print(f"Вторая строка входит в первую {str1.count(str2)
 
 # второй способ
 count = 0
-for i in range(len(str1) - len(str2)):
+k = 1
+for i in range(0,len(str1) - len(str2),k):
     if str2 in str1[i:i+len(str2)]:
         count += 1
-print(f"Вторая строка входит в первуюф {count} раз(а).")
+        k = len(str2)
+    else:
+        k = 1
+print(f"Вторая строка входит в первую {count} раз(а).")
