@@ -36,8 +36,10 @@ def create_str(sp):
                 wr += f'{lst[i]}x'
                 if lst[i+1] != 0:
                     wr += ' + '
-            elif i == len(lst) - 1:
+            elif i == len(lst) - 1 and lst[i] != 0:
                 wr += f'{lst[i]} = 0'
+            elif i == len(lst) - 1 and lst[i] == 0:
+                wr += ' = 0'
     return wr
 
 k = int(input("Введите натуральную степень k = "))
