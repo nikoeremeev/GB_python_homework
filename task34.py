@@ -99,7 +99,7 @@ with open('file34_1.txt', 'r') as data:
 with open('file34_2.txt', 'r') as data:
     st2 = data.readlines()
 print(f"Первый многочлен {st1}")
-print(f"Первый многочлен {st2}")
+print(f"Второй многочлен {st2}")
 lst1 = calc_mn(st1)
 lst2 = calc_mn(st2)
 ll = len(lst1)
