@@ -8,3 +8,8 @@ for i in lst:
     for j in i:
         summ += int(j)
 print(f"Сумма цифр вещественного числа равна = {summ}")
+
+# улучшение
+
+new_sum = sum(map(int, str(number).replace('.', '')))
+print(f"Сумма цифр вещественного числа равна = {new_sum}")
