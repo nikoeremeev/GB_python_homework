@@ -1,13 +1,3 @@
 id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
-8;Фамилия;Имя;Класс;статус
-9;Фамилия;Имя;Класс;статус
-id;surname;name;class;status
-id;surname;name;class;status
-id;surname;name;class;status
+1;Иванов;Иван;8;отл
+2;Петров;Петр;4;хор
