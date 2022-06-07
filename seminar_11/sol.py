@@ -1,11 +1,11 @@
-# Дана функция f(x) = -18x^2+5x+3
+# Дана функция f(x) = -8x^2+3x+17
 
 # 1 Опоределить корни
 
 from sympy import *
 
 x = Symbol('x')
-func=-18*x**2+5*x+3
+func=-8*x**2+3*x+17
 y=solve(func)
 x1=float(y[0])
 x2=float(y[1])
