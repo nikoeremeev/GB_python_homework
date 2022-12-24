@@ -9,7 +9,6 @@ for i in lst:
         summ += int(j)
 print(f"Сумма цифр вещественного числа равна = {summ}")
 
-# улучшение
-
+# улучшение программы
 new_sum = sum(map(int, str(number).replace('.', '')))
 print(f"Сумма цифр вещественного числа равна = {new_sum}")
