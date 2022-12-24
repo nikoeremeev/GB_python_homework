@@ -8,6 +8,7 @@ from search_data import search_data
 def greeting():
     print("Здравствуйте!")
 
+
 def input_data():
     last_name = input("Введите фамилию: ")
     first_name = input("Введите имя: ")
@@ -15,11 +16,13 @@ def input_data():
     note = input("Введите примечание: ")
     return [last_name, first_name, phone_number, note]
 
+
 def choice_sep():
     sep = input("Введите разделитель: ")
     if sep == "":
         sep = None
     return sep
+
 
 def choice_todo():
     print("Что желаем сделать:\n\
@@ -38,8 +41,10 @@ def choice_todo():
         data = export_data()
         item = search_data(word, data)
         if item != None:
-            print("Фамилия".center(20), "Имя".center(20), "Телефон".center(15), "Примечание".center(30))
+            print("Фамилия".center(20), "Имя".center(20),
+                  "Телефон".center(15), "Примечание".center(30))
             print("-"*85)
-            print(item[0].center(20), item[1].center(20), item[2].center(15), item[3].center(30))
+            print(item[0].center(20), item[1].center(20),
+                  item[2].center(15), item[3].center(30))
         else:
             print("Данные не обнаружены")

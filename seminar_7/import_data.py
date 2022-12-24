@@ -1,4 +1,4 @@
-# модуль 
+# модуль
 
 def import_data(data, sep=None):
     with open('phone.csv', 'a+') as file:

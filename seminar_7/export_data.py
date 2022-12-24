@@ -1,4 +1,4 @@
-# модуль экспорта данных 
+# модуль экспорта данных
 
 def export_data():
     with open('phone.csv', 'r') as file:
@@ -13,14 +13,11 @@ def export_data():
                 data.append(temp)
             elif ':' in line:
                 temp = line.strip().split(':')
-                data.append(temp)        
+                data.append(temp)
             elif line != '':
                 if line != '\n':
                     t.append(line.strip())
                 else:
                     data.append(t)
-                    t= []
+                    t = []
     return data
-
-
-
