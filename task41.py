@@ -1,7 +1,13 @@
-# Задача №41: Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных. Входные и выходные данные хранятся в отдельных текстовых файлах. Пример:
-# На сжатие входные данные: WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW
-# Выходные данные:          12W1B12W3B24W1B14W
-
+'''
+Задача №41:
+Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
+Входные и выходные данные хранятся в отдельных текстовых файлах.
+Пример:
+    На сжатие входные данные: 
+        WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW
+    Выходные данные:          
+        12W1B12W3B24W1B14W
+'''
 
 
 def coding(txt):
@@ -16,6 +22,7 @@ def coding(txt):
     if count > 1 or (txt[len(txt)-2] != txt[-1]):
         res = res + str(count) + txt[-1]
     return res
+
 
 def decoding(txt):
     number = ''
